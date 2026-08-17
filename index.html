@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visitor Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h2>SYS<span>SOFT</span></h2>
+        </div>
+
+        <nav>
+           
+            <a href="#">Register Visitor</a>
+            <a href="#">Visitor History</a>
+        </nav>
+    </header>
+
+
+    <main class="container">
+
+        <div class="page-heading">
+            <h1>Visitor Registration</h1>
+            <p>Register visitors entering the company premises.</p>
+        </div>
+
+
+        <form id="visitorForm">
+
+            <!-- VISITOR INFORMATION -->
+            <section class="form-section">
+
+                <h2>Visitor Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter visitor's full name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter email address"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="company">Company / Organization</label>
+                        <input
+                            type="text"
+                            id="company"
+                            placeholder="Enter company name"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="visitorType">Type of Visitor *</label>
+
+                        <select id="visitorType" required>
+
+                            <option value="">
+                                Select visitor type
+                            </option>
+
+                            <option value="Guest">
+                                Guest
+                            </option>
+
+                            <option value="Client">
+                                Client
+                            </option>
+
+                            <option value="Contractor">
+                                Contractor
+                            </option>
+
+                            <option value="Interviewee">
+                                Interviewee
+                            </option>
+
+                            <option value="Delivery">
+                                Delivery
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- VISIT INFORMATION -->
+            <section class="form-section">
+
+                <h2>Visit Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="personToVisit">
+                            Employee / Staff Member to Visit *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="personToVisit"
+                            placeholder="Who are you visiting?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department *
+                        </label>
+
+                        <select id="department" required>
+
+                            <option value="">
+                                Select department
+                            </option>
+
+                            <option value="Human Resources">
+                                Human Resources
+                            </option>
+
+                            <option value="Finance">
+                                Finance
+                            </option>
+
+                            <option value="IT">
+                                IT
+                            </option>
+
+                            <option value="Marketing">
+                                Marketing
+                            </option>
+
+                            <option value="Sales">
+                                Sales
+                            </option>
+
+                            <option value="Management">
+                                Management
+                            </option>
+
+                            <option value="Operations">
+                                Operations
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="purpose">
+                            Purpose / Reason for Visit *
+                        </label>
+
+                        <textarea
+                            id="purpose"
+                            placeholder="Enter the purpose of the visit"
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="expectedCheckin">
+                            Expected Check-in Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="expectedCheckin"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="expectedCheckout">
+                            Expected Check-out Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="expectedCheckout"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- IDENTIFICATION -->
+            <section class="form-section">
+
+                <h2>Identification</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="idType">
+                            ID Type *
+                        </label>
+
+                        <select id="idType" required>
+
+                            <option value="">
+                                Select ID type
+                            </option>
+
+                            <option value="National ID">
+                                National ID
+                            </option>
+
+                            <option value="Driver's License">
+                                Driver's License
+                            </option>
+
+                            <option value="International Passport">
+                                International Passport
+                            </option>
+
+                            <option value="Voter's Card">
+                                Voter's Card
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="idNumber">
+                            ID Number *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="idNumber"
+                            placeholder="Enter ID number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group checkbox-group">
+
+                        <input
+                            type="checkbox"
+                            id="idVerified"
+                        >
+
+                        <label for="idVerified">
+                            ID has been verified
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ITEMS -->
+            <section class="form-section">
+
+                <h2>Items Brought In</h2>
+
+                <div class="form-group">
+
+                    <label for="items">
+                        Items brought into the company
+                    </label>
+
+                    <textarea
+                        id="items"
+                        placeholder="Example: HP Laptop, black backpack, documents..."
+                    ></textarea>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- BUTTON -->
+            <div class="form-actions">
+
+                <button
+                    type="reset"
+                    class="btn secondary"
+                >
+                    Clear
+                </button>
+
+                <button
+                    type="submit"
+                    class="btn primary"
+                >
+                    Check In Visitor
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
