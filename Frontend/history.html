@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Visitor History</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="logo">
+      <h2>SYS<span>SOFT</span></h2>
+    </div>
+
+    <nav>
+      <a href="index.html">Register Visitor</a>
+      <a href="history.html">Visitor History</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-heading">
+
+      <h1>Visitor History</h1>
+
+      <p>
+        View and manage visitors who have entered the company premises.
+      </p>
+
+    </div>
+
+
+    <!-- SEARCH -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search visitor by name...">
+    </div>
+
+    <!-- LOADING -->
+
+    <p id="loadingMessage">
+      Loading visitors...
+    </p>
+
+    <!-- ERROR -->
+    <p id="errorMessage" style="display: none;"></p>
+
+    <!-- TABLE -->
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Visitor Type</th>
+            <th>Department</th>
+            <th>Company</th>
+            <th>Person to Visit</th>
+            <th>Items brought in</th>
+            <th>Check In</th>
+            <th>Check Out</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="visitorTableBody">
+
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="history.js"></script>
+</body>
+</html>
