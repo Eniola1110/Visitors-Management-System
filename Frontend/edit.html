@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Visitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h2>SYS<span>SOFT</span></h2>
+    </div>
+    <nav>
+      <a href="index.html">Register Visitor</a>
+      <a href="history.html">Visitor History</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-heading">
+      <h1>Edit Visitor</h1>
+      <p>Update the visitor's information.</p>
+    </div>
+
+    <form id="editVisitorForm">
+      <!-- VISITOR INFORMATION -->
+      <section class="form-section">
+        <h2>Visitor Information</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullName">
+              Full Name *
+            </label>
+            <input type="text" id="fullName" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">
+              Phone Number *
+            </label>
+            <input type="tel" id="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">
+              Email Address
+            </label>
+            <input type="email" id="email">
+          </div>
+
+          <div class="form-group">
+            <label for="company">
+              Company / Organization
+            </label>
+            <input type="text" id="company">
+          </div>
+
+          <div class="form-group">
+            <label for="visitorType">
+              Type of Visitor *
+            </label>
+            <select id="visitorType" required>
+              <option value="">
+                Select visitor type
+              </option>
+              <option value="Guest">Guest</option>
+              <option value="Client">Client</option>
+              <option value="Contractor">Contractor</option>
+              <option value="Interviewee">Interviewee</option>
+              <option value="Delivery">Delivery</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- VISIT INFORMATION -->
+      <section class="form-section">
+        <h2>Visit Information</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="personToVisit">
+              Employee / Staff Member to Visit *
+            </label>
+            <input type="text" id="personToVisit" required>
+          </div>
+
+          <div class="form-group">
+            <label for="department">
+              Department *
+            </label>
+            <select id="department" required>
+              <option value="">
+                Select department
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="purpose">
+              Purpose / Reason for Visit *
+            </label>
+            <textarea id="purpose" required></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- IDENTIFICATION -->
+      <section class="form-section">
+        <h2>Identification</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="idType">
+              ID Type *
+            </label>
+            <select id="idType" required>
+              <option value="">
+                Select ID type
+              </option>
+              <option value="National ID">
+                National ID
+              </option>
+              <option value="Driver's License">
+                Driver's License
+              </option>
+              <option value="International Passport">
+                International Passport
+              </option>
+              <option value="Voter's Card">
+                Voter's Card
+              </option>
+              <option value="Other">
+                Other
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="idNumber">
+              ID Number *
+            </label>
+            <input type="text" id="idNumber" required>
+          </div>
+        </div>
+      </section>
+
+      <!-- ITEMS -->
+      <section class="form-section">
+        <h2>Items Brought In</h2>
+        <div class="form-group">
+          <label for="items">
+            Items brought into the company
+          </label>
+          <textarea id="items"></textarea>
+        </div>
+      </section>
+
+      <!-- BUTTONS -->
+      <div class="form-actions">
+        <button type="button" class="btn secondary" onclick="window.location.href='history.html'">
+          Cancel
+        </button>
+        <button type="submit" class="btn primary">
+          Update Visitor
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <script src="edit.js"></script>
+</body>
+</html>

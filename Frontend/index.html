@@ -7,7 +7,7 @@
     <title>Visitor Management System</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -18,15 +18,13 @@
         </div>
 
         <nav>
-           
             <a href="#">Register Visitor</a>
-            <a href="#">Visitor History</a>
+            <a href="history.html">Visitor History</a>
         </nav>
     </header>
 
 
     <main class="container">
-
         <div class="page-heading">
             <h1>Visitor Registration</h1>
             <p>Register visitors entering the company premises.</p>
@@ -157,43 +155,7 @@
                         </label>
 
                         <select id="department" required>
-
-                            <option value="">
-                                Select department
-                            </option>
-
-                            <option value="Human Resources">
-                                Human Resources
-                            </option>
-
-                            <option value="Finance">
-                                Finance
-                            </option>
-
-                            <option value="IT">
-                                IT
-                            </option>
-
-                            <option value="Marketing">
-                                Marketing
-                            </option>
-
-                            <option value="Sales">
-                                Sales
-                            </option>
-
-                            <option value="Management">
-                                Management
-                            </option>
-
-                            <option value="Operations">
-                                Operations
-                            </option>
-
-                            <option value="Other">
-                                Other
-                            </option>
-
+                            <option value="">Select department</option>
                         </select>
 
                     </div>
@@ -213,7 +175,7 @@
 
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
 
                         <label for="expectedCheckin">
                             Expected Check-in Time
@@ -224,9 +186,7 @@
                             id="expectedCheckin"
                         >
 
-                    </div>
-
-
+                    </div> -->
                     <div class="form-group">
 
                         <label for="expectedCheckout">
